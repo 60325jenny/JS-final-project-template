@@ -9,5 +9,13 @@ var canvas = document.getElementById("game-canvas");
 
 // 取得 2D繪圖用的物件
 var ctx = canvas.getContext("2d");
+function draw(){
+	// 將背景圖片畫在 canvas 上的 (0,0) 位置
+ctx.drawImage(bgImg,0,0);
+}
+
+// 執行 draw 函式
+setTimeout( draw, 1000);
+
 
 
